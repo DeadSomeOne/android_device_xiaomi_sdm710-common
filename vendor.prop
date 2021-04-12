@@ -16,6 +16,7 @@ persist.vendor.audio.hifi.int_codec=true
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.ring.filter.mask=0
 persist.vendor.audio.spv3.enable=true
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 ro.vendor.audio.game.effect=true
 ro.vendor.audio.ring.filter=true
 ro.vendor.audio.sdk.fluencetype=fluence
