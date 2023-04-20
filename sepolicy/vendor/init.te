@@ -1,1 +1,7 @@
 allow init socket_device:sock_file { unlink setattr create };
+
+allow init logdump_partition:lnk_file relabelto;
+
+allow init sysfs_graphics:file write;
+
+allow init sysfs_graphics:file open;
