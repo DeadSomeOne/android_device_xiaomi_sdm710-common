@@ -1,0 +1,45 @@
+allow recovery self:capability kill;
+
+allow recovery rootfs:dir { create ioctl };
+
+allow recovery test_harness_prop:file { read open getattr };
+
+allow recovery cache_block_device:blk_file ioctl;
+
+allow recovery pstorefs:dir search;
+
+allow recovery ctl_bootanim_prop:file getattr;
+
+allow recovery ctl_bugreport_prop:file { open getattr };
+
+allow recovery ctl_console_prop:file { open getattr };
+
+allow recovery ctl_default_prop:file { open getattr };
+
+allow recovery ctl_dumpstate_prop:file open;
+
+allow recovery logdump_partition:blk_file ioctl;
+
+allow recovery dm_device:blk_file ioctl;
+
+allow recovery sysfs_graphics:dir search;
+
+allow recovery sysfs_graphics:file { write open };
+
+allow recovery sysfs_devices_block:dir { read open search };
+
+allow recovery sysfs_devices_block:file { write open };
+
+allow recovery sysfs_loop:dir { read open search };
+
+allow recovery boottime_prop:property_service set;
+
+allow recovery proc_meminfo:file read;
+
+allow recovery tmpfs:file relabelfrom;
+
+allow recovery proc_pid_max:file read;
+
+allow recovery init:file read;
+
+allow recovery kernel:file read;
