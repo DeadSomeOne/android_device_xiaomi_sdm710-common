@@ -128,7 +128,6 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.btsatck.absvolfeature=true
 persist.vendor.qcom.bluetooth.scram.enabled=true
 persist.vendor.qcom.bluetooth.soc=cherokee
-persist.vendor.service.bdroid.sibs=false
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
@@ -168,6 +167,7 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.hwui.render_ahead=5
 
 # IMS
 persist.dbg.volte_avail_ovr=1
@@ -199,9 +199,6 @@ ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=22,22
 ro.telephony.iwlan_operation_mode=legacy
 telephony.lteOnCdmaDevice=1
-
-# RCS
-persist.rcs.supported=0
 
 # USB
 vendor.usb.diag.func.name=diag
