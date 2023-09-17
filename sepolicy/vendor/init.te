@@ -6,9 +6,6 @@ allow init sysfs_graphics:file write;
 
 allow init sysfs_graphics:file open;
 
-# Smart Charging
-allow init sysfs_battery_supply:file { setattr };
-
 allow init debugfs_tracing_debug:dir { mounton };
 allow init bt_firmware_file:filesystem { getattr };
 allow init firmware_file:filesystem { getattr };
