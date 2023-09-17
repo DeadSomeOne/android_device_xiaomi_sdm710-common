@@ -1,0 +1,1 @@
+allow vendor_wfdservice vendor_file:dir { read open };
