@@ -1,0 +1,2 @@
+allow wifidisplayhalservice_qti self:capability { net_raw };
+allow wifidisplayhalservice_qti tombstoned_crash_socket:sock_file { write };
