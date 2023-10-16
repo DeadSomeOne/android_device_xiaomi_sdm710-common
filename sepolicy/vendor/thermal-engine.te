@@ -10,4 +10,4 @@ r_dir_file(thermal-engine, sysfs)
 
 set_prop(thermal-engine, vendor_thermal_normal_prop)
 
-allow thermal-engine sysfs:dir { read };
+allow thermal-engine sysfs:dir { read open };
