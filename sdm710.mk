@@ -186,7 +186,10 @@ $(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,fal
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.sdm710
+    vendor.lineage.livedisplay-service.sysfs
+
+$(call soong_config_set_bool,livedisplay_sysfs,enable_se,true)
+$(call soong_config_set_bool,livedisplay_sysfs,enable_af,true)
 
 # Media configs
 PRODUCT_COPY_FILES += \
